@@ -104,12 +104,12 @@ export default class Masonry extends Component {
 	}
 
 	resolveBricks({ bricks, columns }, offSet = 0) {
-		if (bricks.length === 0) {
-			// clear and re-render
-			this.setState(state => ({
-				dataSource: state.dataSource.cloneWithRows([])
-			}));
-		}
+		// if (bricks.length === 0) {
+		// 	// clear and re-render
+		// 	this.setState(state => ({
+		// 		dataSource: state.dataSource.cloneWithRows([])
+		// 	}));
+		// }
 
 		// Sort bricks and place them into their respectable columns
 		// Issues arrise if state changes occur in the midst of a resolve
